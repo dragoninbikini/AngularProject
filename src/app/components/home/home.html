@@ -1,0 +1,18 @@
+<header>
+    <app-header></app-header>
+</header>
+
+<div class="container">
+    <div class="note-titles mat-elevation-z5"
+     [class.active]="isTitlesActive"
+    (click)="toggleActive('titles', $event)">
+    <app-login></app-login>
+    </div>
+    <div class="notes mat-elevation-z5"
+    [class.active]="isNotesActive"
+    (click)="toggleActive('notes', $event)">
+    <app-signup></app-signup>
+    </div>
+
+</div>
+

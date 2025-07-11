@@ -1,0 +1,18 @@
+<div class="loginpage">
+    <header>
+        <app-header></app-header>
+    </header>
+<div class="contents">
+        <p>Email</p>
+        <input [(ngModel)]="inputEmail" placeholder="Email">
+        <!-- <input [(ngModel)]="inputEmail" placeholder="Email"> -->
+        <p>Password</p>
+        <input [(ngModel)]="inputPasswd" placeholder="Password" type="password">
+        <!-- <input type="password" placeholder="Write your password here please" />{{passwd}} -->
+        <a class="forgot" href="#">Forgot password?</a>
+    <button class="submit" (click)="onLogin('admin', 'admin')">Login</button>
+        <button class="existing-acc">
+        <a href="signup">Create an Account?</a>
+    </button>  
+</div>
+</div>

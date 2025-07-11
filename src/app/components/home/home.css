@@ -1,0 +1,44 @@
+.container  {
+    display: flex;
+    height: calc(100vh - 70px);
+    justify-content: center;
+
+}
+
+.note-titles {
+    margin: 16px;
+    width: 20%;
+    background: lightblue;
+    border-radius: 16px;
+    transition: 0.5s ease-out;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);           /* frosted glass effect */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.note-titles:hover {
+    width: 40%;
+    transition: 1.5s ease-in-out;
+}
+
+.notes:hover {
+    width: 60%;
+    transition: 2s ease-in-out
+}
+
+.notes {
+    backdrop-filter: blur(10px);           /* frosted glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    margin: 16px;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    transition: 0.5s ease-out;
+}
+
+.note-titles.active {
+    width: 40%;
+}
+.notes.active {
+    width: 60%;
+}

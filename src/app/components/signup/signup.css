@@ -1,0 +1,95 @@
+* {
+  overflow: hidden;
+}
+
+.sign-up {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: grid; 
+    overflow: hidden;
+}
+
+
+
+.sign-up-text {
+    font-family: 'Cloudy';
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 400px;
+    transition: 0.5s ease;
+}
+
+.sign-up-button {
+  height: 55px;
+  width: 125px;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #011120;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+  align-items: center;
+  justify-items: center;
+  margin-top: 450px;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.sign-up.active .sign-up-button:hover {
+  text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #2196f3,
+               0 0 20px #2196f3;
+  transition: text-shadow 0.4s ease-in-out;
+
+}
+
+
+
+.sign-up-button a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.welcome-text {
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.sign-up.active .sign-up-text {
+  margin-top:0 ;
+  transition: 2s ease;
+}
+.sign-up.active .welcome-text {
+  opacity: 0;
+  transition-delay: 2.5s;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.sign-up.active .sign-up-button {
+  opacity: 0;
+  transition-delay: 0.5s;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+

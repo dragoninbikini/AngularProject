@@ -1,0 +1,14 @@
+.header {
+    text-align: center;
+    height: 50px;
+    align-items: center;
+    margin-top: 0;
+    overflow: visible;
+}
+h3 {
+    /* font-size: large; */
+    font-weight: bold;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-family: 'Cloudy';
+}

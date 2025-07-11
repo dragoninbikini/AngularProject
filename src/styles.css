@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+/* * {
+    background-color: black;
+} */
+
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ .mat-h3, .mat-subtitle-1, .mat-typography .mat-h3, .mat-typography .mat-subtitle-1, .mat-typography h3 {
+    font: 516 136px / 80px Roboto, sans-serif;
+    letter-spacing: 0.009375em;
+    margin: 0px 0px 16px;
+    
+ }
+html, body { 
+  margin: 0;
+  /* background-color: #ffffff; */
+  background-image: url('./assets/test3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* .body {
+    background-image: url(./assets/clouds.jpg);
+    background-size: cover;
+} */
+
+@font-face {
+   
+
+    font-family: 'LoveStory';
+    src: url(./assets/LovesStory.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+     font-family: 'Cloudy';
+    src: url(./assets/CLOUDY\ FONT.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
