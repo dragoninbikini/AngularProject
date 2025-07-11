@@ -7,9 +7,10 @@ import { faPen } from '@fortawesome/free-solid-svg-icons';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
 import { faTableColumns } from '@fortawesome/free-solid-svg-icons';
 import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-homepage',
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, RouterLink],
   templateUrl: './homepage.html',
   styleUrl: './homepage.css'
 })
@@ -38,4 +39,5 @@ export class Homepage implements OnInit{
       setTimeout(() => this.typeText(), 100); // typing speed in ms
     }
   }
+
 }

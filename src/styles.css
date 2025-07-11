@@ -21,7 +21,7 @@ html, body {
   background-image: url('./assets/test3.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,50 @@
+<div class="container">
+    <app-header></app-header>
+  <div class="text-container">
+    <h1>the Step no. 1 to Your</h1>
+    <h3>World Class Identity</h3>
+    </div>
+
+   <div class="progress-container">
+  <div
+    class="progress-step"
+    *ngFor="let step of steps; let i = index"
+    [class.active]="i === currentStep"
+    [class.done]="i < currentStep"
+  >
+    <div class="line_left" *ngIf="i !== 0"></div>
+    <div class="circle">{{ step }}</div>
+    <div class="line_right" *ngIf="i !== steps.length - 1"></div>
+  </div>
+
+ 
+</div>
+
+ <div class="about">
+    <h1>
+        // What can we help you with?
+    </h1>
+    <div class="option-grid">
+  <button 
+    *ngFor="let option of options; let i = index"
+    (click)="selectOption(i)"
+    [class.selected]="selectedIndex === i">
+
+    <div class="option-content">
+      <div class="option-icon-circle">
+        <fa-icon 
+          *ngIf="selectedIndex === i" 
+          [icon]="faCheck">
+        </fa-icon>
+        <span *ngIf="selectedIndex !== i">{{ option.letter }}</span>
+      </div>
+
+      <span class="option-label">{{ option.label }}</span>
+    </div>
+
+  </button>
+</div>
+
+  </div>
+</div>
+    

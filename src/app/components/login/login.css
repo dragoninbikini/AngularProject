@@ -13,7 +13,7 @@
 
 
 .sign-up-text {
-    font-family: 'Cloudy';
+    font-family: 'LoveStory';
     color: black;
     font-size: 50px;
     text-align: center;
@@ -64,6 +64,7 @@
     font-size: 25px;
     opacity: 0;
     transition: 0.5s ease;
+    font-family: 'Cloudy';
 }
 
 .sign-up.active .sign-up-text {

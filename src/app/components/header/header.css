@@ -1,14 +1,19 @@
-.header {
-    text-align: center;
-    height: 50px;
-    align-items: center;
-    margin-top: 0;
-    overflow: visible;
+.header header h2 {
+  text-align: center;
+    font-family: 'LoveStory';
+    font-size: 150px;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 0;
 }
-h3 {
+.header p {
     /* font-size: large; */
-    font-weight: bold;
-    margin-top: 20px;
-    color: whitesmoke;
-    font-family: 'Cloudy';
+   margin-top: 50px;
+   text-align: center;
+   text-decoration: none;
+   font-weight: 400;
+   font-family: monospace;
+   margin-top: 50px;
+   color: white;
+   font-size: 15px;
 }
